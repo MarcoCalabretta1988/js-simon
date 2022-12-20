@@ -20,6 +20,11 @@ let hoursToChristmas = 23 - hours;
 let minutesToChristmas = 59 - minutes;
 let secondsToChristmas = 59 - seconds;
 
+if( secondssToChristmas <= 10) secondsElement.innerText = '0' + --secondssToChristmas;
+if( minutessToChristmas <= 10) minutesElement.innerText = '0' + --minutessToChristmas;
+if( hoursToChristmas <= 10) hoursElement.innerText = '0' + --hoursToChristmas;
+
+
  //Inizializzo I valori del count down
  daysElement.innerText = daysToChristmas;
  hoursElement.innerText = hoursToChristmas;
