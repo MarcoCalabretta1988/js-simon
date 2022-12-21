@@ -9,7 +9,7 @@ const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 
 //Recupero millisecondi al natale
- const christmas = new Date (2022 , 11,25,0,0,0);
+ const christmas = new Date (2022,11,25,0,0,0);
  const christmasMillisecond = christmas.getTime();
 
  // definisco parametri secondo i millisecondi
@@ -27,7 +27,7 @@ const secondsElement = document.getElementById('seconds');
 
     //calcolo differenza al natale
     const delta = christmasMillisecond - nowMillisecond;
-
+  
     //calcolo giorni,minuti
     const daysToChristmas = Math.floor(delta / day);
     const hoursToChristmas = Math.floor((delta % day) / hour );
